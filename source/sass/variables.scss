@@ -1,0 +1,31 @@
+//Template Colors
+//Можно добавлять цвета из темы
+$white: #FFFFFF;
+$opacity-white: rgba(255, 255, 255, 0.2);
+$black: #000000;
+$dark: #1B2D37;
+$dark-blue: #203C42;
+$text-dark: #48494D;
+$text-black: #666666;
+$green-blue: #0AD9C6;
+$green-blue-hover: #089c8e;
+$grey: #788891;
+$border-grey: #EBEBEB;
+$light-grey: #626962;
+$skyblue: #00B2FF;
+$background-grey: #F6F6F6;
+$background-white: #F6F7F9;
+//Template breakpoints
+$mobile-width: 320px;
+$mobile-width-max: 575px;
+$tablet-width: 767px;
+$desktop-width: 1023px;
+$desktop-width-max: 1415px;
+//Template retina media
+$retina-dpi: 144dpi;
+$retina-dppx: 2dppx;
+//Template Fonts for BODY
+$main-fonts: "Roboto", "Arial", sans-serif;
+$sec-fonts: "PT Mono", "Arial", sans-serif;
+$main-font-size: 17px;
+$main-font-weight: 500;
