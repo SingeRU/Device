@@ -1,0 +1,13 @@
+.checkbox {
+    position: absolute;
+    width: 17px;
+    height: 16px;
+    transform: translateX(-2rem);
+
+}
+
+@media (max-width: $tablet-width) {
+    .checkbox {
+        transform: translateX(-2.2rem);
+    }
+}

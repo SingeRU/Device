@@ -1,0 +1,242 @@
+.goods {
+    background-color: $dark;
+    min-height: 938px;
+    margin-top: 6.4rem;
+}
+
+.goods-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    color: $white;
+    padding-top: 5.5rem;
+    padding-left: 8.1rem;
+}
+
+.goods-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 3.2rem;
+}
+
+.goods-block {
+    display: block;
+    flex: 0 1 26%;
+
+    min-height: 620px;
+    display: block;
+
+}
+
+.goods-block--fees {
+    background-image: url(../img/image-1.webp);
+    background-size: 100% 620px;
+    background-repeat: no-repeat;
+    margin-right: 2rem;
+    margin-left: 0.8rem;
+
+    @media (min-resolution: $retina-dppx) {
+        background-image: url(../img/image-1@2x.webp);
+    }
+}
+
+.goods-block--assembly {
+    background-image: url(../img/image-2.webp);
+    background-size: 100% 620px;
+    background-repeat: no-repeat;
+    margin-right: 2rem;
+
+    @media (min-resolution: $retina-dppx) {
+        background-image: url(../img/image-2@2x.webp);
+    }
+}
+
+.goods-block--light {
+    background-image: url(../img/image-3.webp);
+    background-size: 100% 620px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+        background-image: url(../img/image-3@2x.webp);
+    }
+}
+
+.goods-block__link {
+    display: block;
+    transform: translateY(-1.2rem);
+    height: 103%;
+    position: relative;
+    text-decoration: none;
+    color: $white;
+}
+
+.goods-block__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    padding: 4.3rem 8rem 0 2.8rem;
+}
+
+.goods-block--assembly h3 {
+    padding-right: 9rem;
+}
+
+.goods-block--light h3 {
+    padding-right: 10rem;
+}
+
+.goods-block__button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 63px;
+    height: 63px;
+    background-color: $skyblue;
+    border: none;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.goods-block__button:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: $desktop-width) {
+    .goods {
+        margin-top: 5.3rem;
+    }
+
+    .goods-container {
+        flex-wrap: wrap;
+        row-gap: 2.9rem;
+        padding-bottom: 4.8rem
+    }
+
+    .goods-block {
+        flex: 0 1 93%;
+        margin: 0;
+        min-height: 256px;
+    }
+
+    .goods-title {
+        font-size: 32px;
+        line-height: 45px;
+        padding-top: 3rem;
+        padding-left: 1.5rem;
+        padding-right: 7rem;
+    }
+
+    .goods-block--fees {
+        background-image: url(../img/image-1-tab.webp);
+        background-size: 100% 256px;
+
+        @media (min-resolution: $retina-dppx) {
+            background-image: url(../img/image-1-tab@2x.webp);
+        }
+    }
+
+    .goods-block--assembly {
+        background-image: url(../img/image-2-tab.webp);
+        background-size: 100% 256px;
+
+        @media (min-resolution: $retina-dppx) {
+            background-image: url(../img/image-2-tab@2x.webp);
+        }
+    }
+
+    .goods-block--light {
+        background-image: url(../img/image-3-tab.webp);
+        background-size: 100% 256px;
+
+        @media (min-resolution: $retina-dppx) {
+            background-image: url(../img/image-3-tab@2x.webp);
+        }
+    }
+
+    .goods-block__link {
+        height: 105%;
+
+    }
+
+    .goods-block__title {
+        padding: 3.6rem 33rem 0 2.6rem;
+    }
+
+    .goods-block--assembly h3 {
+        padding-top: 3.6rem;
+        padding-right: 30rem;
+    }
+
+    .goods-block--light h3 {
+        padding-right: 32rem;
+        padding-top: 4.5rem;
+    }
+
+    .goods-block__button {
+        right: 1px;
+        bottom: -6px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .goods {
+        margin-top: 4rem;
+    }
+
+    .goods-container {
+        padding-top: 2.8rem;
+        row-gap: 1.8rem;
+        padding-bottom: 4rem;
+    }
+
+    .goods-title {
+        font-size: 28px;
+        line-height: 39px;
+        padding-right: 1rem;
+    }
+
+    .goods-block--fees {
+        background-image: url(../../img/image-1-mob.webp);
+        background-size: 100% 256px;
+
+        @media (min-resolution: $retina-dppx) {
+            background-image: url(../../img/image-1-mob@2x.webp);
+        }
+    }
+
+    .goods-block--assembly {
+        background-image: url(../../img/image-2-mob.webp);
+        background-size: 100% 256px;
+
+        @media (min-resolution: $retina-dppx) {
+            background-image: url(../../img/image-2-mob@2x.webp);
+        }
+    }
+
+    .goods-block--light {
+        background-image: url(../../img/image-3-mob.webp);
+        background-size: 100% 256px;
+
+        @media (min-resolution: $retina-dppx) {
+            background-image: url(../../img/image-3-mob@2x.webp);
+        }
+    }
+
+    .goods-block__title {
+        padding: 2.3rem 7rem 0 2.5rem;
+    }
+
+    .goods-block--assembly h3 {
+        padding-top: 2.5rem;
+        padding-right: 6rem;
+    }
+
+    .goods-block--light h3 {
+        padding-right: 6rem;
+        padding-top: 3.1rem;
+    }
+}
