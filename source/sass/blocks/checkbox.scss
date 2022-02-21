@@ -6,6 +6,10 @@
 
 }
 
+.checkbox--popup {
+    transform: translateX(-3rem);
+}
+
 @media (max-width: $tablet-width) {
     .checkbox {
         transform: translateX(-2.2rem);

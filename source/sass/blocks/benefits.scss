@@ -20,6 +20,14 @@
     border: 1px solid $border-grey;
 }
 
+.benefits-card__svg {
+    fill: $skyblue;
+}
+
+.benefits-card:hover .benefits-card__svg {
+    fill: $white;
+}
+
 .benefits-card:hover {
     color: $white;
     background-color: $skyblue;
@@ -29,16 +37,12 @@
     color: $white;
 }
 
-.benefits-card:hover path {
+.benefits-card:hover + .clock {
     fill: $white;
 }
 
 .benefits-card:nth-child(2n) {
     flex: 0 1 48.5%;
-}
-
-.benefits-card path {
-    fill: $skyblue;
 }
 
 .benefits-card::before {

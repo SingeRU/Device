@@ -23,7 +23,7 @@
 .goods-block {
     display: block;
     flex: 0 1 26%;
-
+    position: relative;
     min-height: 620px;
     display: block;
 
@@ -66,7 +66,7 @@
     display: block;
     transform: translateY(-1.2rem);
     height: 103%;
-    position: relative;
+
     text-decoration: none;
     color: $white;
 }

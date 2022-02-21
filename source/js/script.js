@@ -1,15 +1,31 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+let popup = document.querySelector('.popup');
+let popupOpenButton = document.querySelector('.button');
+let popupCloseButton = document.querySelector('.popup-close');
+let nameInput = document.getElementById("nameInput");
+let phoneInput = document.getElementById("phoneInput");
 
-pageHeader.classList.remove('page-header--nojs');
+popup.classList.remove('popup--opened');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+popupOpenButton.addEventListener('click', () => {
+  popup.classList.add('popup--opened');
+  nameInput.focus();
+});
+
+popupCloseButton.addEventListener('click', () => {
+  popup.classList.remove('popup--opened');
+});
+
+window.addEventListener('keydown', (evt) => {
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains('popup--opened')) {
+      evt.preventDefault();
+      popup.classList.remove('popup--opened');
+    }
   }
 });
+
+//isFocused phone
+phoneInput.addEventListener('focus', () => {
+  phoneInput.value = "+7 (";
+})

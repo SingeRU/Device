@@ -1,0 +1,174 @@
+.popup {
+    background-color: $opacity-black;
+    position: fixed;
+    display: none;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.popup--opened {
+    display: flex;
+}
+
+.popup-body {
+    display: flex;
+    justify-content: center;
+    max-width: 490px;
+    background-color: $skyblue;
+    padding: 2rem 2.5rem;
+    position: relative;
+}
+
+.popup-form {
+    flex: 0 1 100%;
+}
+
+.popup-fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.popup-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 39px;
+    color: $white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.popup-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $white;
+    font-family: PT Mono;
+
+    padding-right: 0.5rem;
+    margin-bottom: 0;
+    margin-top: 0.7rem;
+    padding-left: 0;
+}
+
+.popup-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    row-gap: 1.9rem;
+}
+
+.popup-fields label {
+    flex: 0 1 100%;
+}
+
+.popup-fields input {
+    font-family: PT Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    border: none;
+    background-color: $opacity-white;
+    height: 52px;
+    padding-left: 1.5rem;
+    width: 100%;
+}
+
+.popup-textarea {
+    resize: none;
+    width: 100%;
+    height: 104px;
+    background-color: $opacity-white;
+
+    font-family: PT Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $white;
+    border: none;
+
+    margin-top: 1.9rem;
+    padding-top: 0.6rem;
+    padding-left: 1.5rem;
+}
+
+.popup-textarea::placeholder,
+.popup-fields input::placeholder {
+    color: $white;
+}
+
+.popup-textarea:focus,
+.popup-fields input:focus {
+    outline: 1px solid $white;
+}
+
+.popup-check {
+    display: flex;
+    margin-top: 1.6rem;
+    flex-wrap: wrap;
+}
+
+.popup-button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 1px solid $white;
+    border-radius: 5px;
+
+    background-color: $skyblue;
+    flex: 0 1 100%;
+    height: 45px;
+    color: $white;
+    cursor: pointer;
+}
+
+.popup-check label {
+    font-family: PT Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    padding-left: 3rem;
+    padding-top: 2.2rem;
+    padding-right: 0.1rem;
+    flex: 0 1 100%;
+    cursor: pointer;
+    color: $white;
+}
+
+.popup-checkbox {
+    appearance: none;
+    position: absolute;
+}
+
+.popup-checkbox:active + .checkbox {
+    background-image: url(../img/accept.svg);
+    background-repeat: no-repeat;
+}
+
+.popup-close {
+    position: absolute;
+    top: 1.3rem;
+    right: 1.55rem;
+    background: none;
+    border: none;
+    width: 16.56px;
+    height: 16.56px;
+    cursor: pointer;
+}
