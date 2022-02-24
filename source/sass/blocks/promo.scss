@@ -6,14 +6,15 @@
 
 .promo-container {
     display: flex;
-    max-width: 1500px;
+    max-width: 1600px;
     min-width: $mobile-width;
     margin: 0 auto;
+    min-height: 100%;
 }
 
 .promo-message {
     flex: 0 1 52%;
-    padding-left: 2.5rem;
+    transform: translateX(6.2rem);
     position: relative;
     z-index: 4;
 }
@@ -88,11 +89,13 @@
     flex: 0 1 48%;
     position: relative;
     z-index: 4;
+    overflow: hidden;
 }
 
 .promo-picture__image {
     position: absolute;
-    left: 3rem;
+    left: 3.3rem;
+    top: -2px;
 }
 
 @media (max-width: $desktop-width) {
@@ -108,7 +111,7 @@
     .promo-message {
         flex: 0 1 64%;
         padding-left: 0;
-        padding-left: 4.5rem;
+        transform: translateX(4.5rem);
     }
 
     .promo-message__title {
@@ -150,7 +153,7 @@
         margin-left: 0;
         margin-top: 2.4rem;
         position: absolute;
-        right: -1.6rem;
+        right: 2.8rem;
     }
   }
 

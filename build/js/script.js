@@ -2,8 +2,8 @@
 let popup = document.querySelector('.popup');
 let popupOpenButton = document.querySelector('.button');
 let popupCloseButton = document.querySelector('.popup-close');
-let nameInput = document.getElementById("nameInput"); 
-let phoneInput = document.getElementById("phoneInput"); 
+let nameInput = document.getElementById("nameInput");
+let phoneInput = document.getElementById("phoneInput");
 
 popup.classList.remove('popup--opened');
 
@@ -29,4 +29,3 @@ window.addEventListener('keydown', (evt) => {
 phoneInput.addEventListener('focus', () => {
   phoneInput.value = "+7 (";
 })
-

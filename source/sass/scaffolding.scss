@@ -14,7 +14,6 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-
   margin: 0 auto;
 
   background-color: $white;
@@ -23,6 +22,7 @@ html {
   font-weight: 400;
   position: relative;
   overflow: auto;
+  background-color: $dark;
 }
 
 .page-body::before {
@@ -38,7 +38,7 @@ html {
 
 @media (max-width: $desktop-width) {
   .page-body::before {
-    height: 648px;
+    height: 686px;
   }
 }
 
