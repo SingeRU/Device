@@ -1,7 +1,7 @@
 html {
   height: 100%;
   box-sizing: border-box;
-
+  background-color: $white;
   font-family: "Opensans";
 }
 
@@ -39,6 +39,12 @@ html {
 @media (max-width: $desktop-width) {
   .page-body::before {
     height: 686px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-body::before {
+    height: 646px;
   }
 }
 

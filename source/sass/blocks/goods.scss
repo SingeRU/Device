@@ -64,10 +64,11 @@
 
 .goods-block__link {
     display: block;
-    transform: translateY(-1.2rem);
-    height: 103%;
+    transform: translateY(0);
+    height: 100%;
 
     text-decoration: none;
+    background-color: $opacity-dark;
     color: $white;
 }
 
@@ -157,28 +158,23 @@
         }
     }
 
-    .goods-block__link {
-        height: 105%;
-
-    }
-
     .goods-block__title {
-        padding: 3.6rem 33rem 0 2.6rem;
+        padding: 2.6rem 33rem 0 2.6rem;
     }
 
     .goods-block--assembly h3 {
-        padding-top: 3.6rem;
+        padding-top: 2.4rem;
         padding-right: 30rem;
     }
 
     .goods-block--light h3 {
         padding-right: 32rem;
-        padding-top: 4.5rem;
+        padding-top: 3rem;
     }
 
     .goods-block__button {
-        right: 1px;
-        bottom: -6px;
+        right: 0px;
+        bottom: 0px;
     }
 }
 
@@ -200,43 +196,43 @@
     }
 
     .goods-block--fees {
-        background-image: url(../../img/image-1-mob.webp);
+        background-image: url(../img/image-1-mob.webp);
         background-size: 100% 256px;
 
         @media (min-resolution: $retina-dppx) {
-            background-image: url(../../img/image-1-mob@2x.webp);
+            background-image: url(../img/image-1-mob@2x.webp);
         }
     }
 
     .goods-block--assembly {
-        background-image: url(../../img/image-2-mob.webp);
+        background-image: url(../img/image-2-mob.webp);
         background-size: 100% 256px;
 
         @media (min-resolution: $retina-dppx) {
-            background-image: url(../../img/image-2-mob@2x.webp);
+            background-image: url(../img/image-2-mob@2x.webp);
         }
     }
 
     .goods-block--light {
-        background-image: url(../../img/image-3-mob.webp);
+        background-image: url(../img/image-3-mob.webp);
         background-size: 100% 256px;
 
         @media (min-resolution: $retina-dppx) {
-            background-image: url(../../img/image-3-mob@2x.webp);
+            background-image: url(../img/image-3-mob@2x.webp);
         }
     }
 
     .goods-block__title {
-        padding: 2.3rem 7rem 0 2.5rem;
+        padding: 1.2rem 7rem 0 2.5rem;
     }
 
     .goods-block--assembly h3 {
-        padding-top: 2.5rem;
+        padding-top: 1.2rem;
         padding-right: 6rem;
     }
 
     .goods-block--light h3 {
         padding-right: 6rem;
-        padding-top: 3.1rem;
+        padding-top: 2rem;
     }
 }

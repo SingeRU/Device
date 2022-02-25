@@ -146,7 +146,7 @@
 
 @media (max-width: $desktop-width) {
     .form {
-        padding-bottom: 6.5rem;
+        padding-bottom: 6.6rem;
     }
 
     .form-form {
@@ -191,6 +191,10 @@
 }
 
 @media (max-width: $tablet-width) {
+    .form {
+        padding-bottom: 2.6rem;
+    }
+
     .form-form__fieldset {
         padding: 0 0.8rem
     }
@@ -233,5 +237,6 @@
     .form-form__check label {
         flex: 0 1 100%;
         padding-left: 2.3rem;
+        padding-top: 2rem;
     }
 }
