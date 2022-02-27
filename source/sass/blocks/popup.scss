@@ -135,6 +135,13 @@
     height: 45px;
     color: $white;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.popup-button:hover,
+.popup-button:active {
+    background-color: $white;
+    color: $skyblue;
 }
 
 .popup-check label {

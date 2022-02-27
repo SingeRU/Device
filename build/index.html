@@ -75,7 +75,7 @@
     </svg>
     <header class="page-header header">
       <div class="header-container container">
-        <a href="#" class="header-logo">
+        <a class="header-logo">
           <img class="logo" src="img/logo.svg" alt="Logo" width="52" height="52">
         </a>
         <div class="header__text">
@@ -85,16 +85,24 @@
         <div class="header-contacts">
           <ul class="header-contacts__list">
             <li class="header-contacts__item  header-contacts__item--mail">
-              <svg class="mail" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#mail"></use>
-              </svg>
-              <a class="header-contacts__link" href="mailto:info@sd.ru">info@sd.ru</a>
+              <a class="header-contacts__link" href="mailto:info@sd.ru">
+                <svg class="mail" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#mail"></use>
+                </svg>
+                <span>
+                  info@sd.ru
+                </span>   
+              </a>
             </li>
             <li class="header-contacts__item  header-contacts__item--phone">
-              <svg class="phone" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#phone"></use>
-              </svg>
-              <a class="header-contacts__link" href="tel:+74950005252">+7 (495) 000 52 52</a>
+              <a class="header-contacts__link" href="tel:+74950005252">
+                <svg class="phone" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#phone"></use>
+                </svg>
+                <span>
+                  +7 (495) 000 52 52
+                </span>  
+              </a>
             </li>
           </ul>
         </div>
@@ -210,10 +218,10 @@
               <p class="form-form__text">Мы проконсультируем Вас бесплатно</p>
               <div class="form-form__fields">
                 <label>
-                  <input type="text" placeholder="Имя" aria-label="data">
+                  <input id="name" type="text" placeholder="Имя" aria-label="data">
                 </label>
                 <label>
-                  <input type="tel" placeholder="Телефон" aria-label="data">
+                  <input id="phone" type="tel" placeholder="Телефон" aria-label="data">
                 </label>
               </div>
               <textarea class="form-form__textarea" name="Вопрос" placeholder="Ваш вопрос"></textarea>
@@ -246,19 +254,25 @@
             </div>
             <ul class="footer-socials__list">
               <li class="footer-socials__item">
-                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="#facebook"></use>
-                </svg>
+                <a class="footer-socials__link" href="#">
+                  <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="footer-socials__item">
-                <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="#ok"></use>
-                </svg>
+                <a class="footer-socials__link" href="#">
+                  <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#ok"></use>
+                  </svg>
+                </a>  
               </li>
               <li class="footer-socials__item">
-                <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="#vk"></use>
-                </svg>
+                <a class="footer-socials__link" href="#">
+                  <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#vk"></use>
+                  </svg>
+                </a> 
               </li>
             </ul>
           </div>
@@ -266,13 +280,27 @@
             <div class="navigation__wrapper">
               <h2 class="navigation-title">Разделы сайта</h2>
               <ul class="navigation__list">
-                <li class="navigation__item">О компании</li>
-                <li class="navigation__item">Продукты</li>
-                <li class="navigation__item">Производство печатных плат</li>
-                <li class="navigation__item">Монтаж печатных плат</li>
-                <li class="navigation__item">Комплектующие</li>
-                <li class="navigation__item">Доставка</li>
-                <li class="navigation__item">Контакты</li>
+                <li class="navigation__item">
+                  <a class="navigation__item-link" href="#">О компании</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__item-link" href="#">Продукты</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__item-link" href="#">Производство печатных плат</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__item-link" href="#">Монтаж печатных плат</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__item-link" href="#">Комплектующие</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__item-link" href="#">Доставка</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__item-link" href="#">Контакты</a>
+                </li>
               </ul>
             </div>
             <div class="footer-contacts">
@@ -318,10 +346,10 @@
             <p class="popup-text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
             <div class="popup-fields">
               <label>
-                <input id="nameInput" type="text" placeholder="Имя" aria-label="data">
+                <input id="nameInput" type="text" placeholder="Имя" aria-label="data" required="">
               </label>
               <label>
-                <input id="phoneInput" type="tel" placeholder="Телефон" aria-label="data" value="">
+                <input id="phoneInput" type="tel" placeholder="Телефон" aria-label="data" value="" required="" maxlength="18">
               </label>
             </div>
             <textarea class="popup-textarea" name="Вопрос" placeholder="Ваш вопрос"></textarea>
@@ -333,7 +361,7 @@
                     <use xlink:href="#square"></use>
                   </svg>
                 </span>
-                <input class="popup-checkbox" type="checkbox" aria-label="data"> Я согласен на обработку  персональных данных
+                <input class="popup-checkbox" type="checkbox" aria-label="data" required=""> Я согласен на обработку  персональных данных
               </label>
             </div>
           </fieldset>

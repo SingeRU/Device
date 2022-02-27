@@ -38,6 +38,14 @@
     cursor: pointer;
 }
 
+.footer-socials__link svg:hover {
+    fill-opacity: 0.5;
+}
+
+.footer-socials__link svg:focus {
+    outline: 5px solid $black;
+}
+
 .footer-logo {
     height: min-content;
 }
@@ -90,6 +98,8 @@
     flex-wrap: wrap;
     height: 100px;
     margin-top: 25px;
+    column-gap: 2rem;
+    padding-right: 2rem;
 }
 
 .navigation__item {
@@ -99,9 +109,20 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 25px;
-
+    width: fit-content;
     color: $dark;
     opacity: 0.5;
+}
+
+.navigation__item-link {
+    color: $dark;
+    opacity: 0.5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navigation__item-link:hover {
+    opacity: 1;
 }
 
 .navigation-title {
@@ -134,7 +155,6 @@
 
 }
 
-
 .footer-contacts__list {
     padding: 0;
     margin: 0;
@@ -156,6 +176,11 @@
 .footer-contacts__link {
     text-decoration: none;
     color: $dark;
+    transition: 0.3s;
+}
+
+.footer-contacts__link:hover {
+    opacity: 0.5;
 }
 
 .footer-copyright {
@@ -169,7 +194,7 @@
     width: 100%;
     height: 1px;
     opacity: 0.2;
-    top: -15px;
+    top: -24px;
 }
 
 .footer-copyright__container {
@@ -215,7 +240,7 @@
     }
 
     .footer-container {
-        max-width: 768px;
+        max-width: 100%;
     }
 
     .footer-navigation {
@@ -238,7 +263,7 @@
     }
 
     .navigation {
-        margin-top: 3.7rem;
+        margin-top: 3.9rem;
         padding-left: 1.6rem;
         width: 100%;
         position: relative;
@@ -310,10 +335,6 @@
         padding-top: 3rem;
     }
 
-    .footer-container {
-        max-width: 90%;
-    }
-
     .footer-socials {
         flex-wrap: wrap;
         padding-left: 3.3rem;
@@ -344,12 +365,28 @@
 
     .navigation::before {
         left: 0;
-        top: -30px;
+        top: -32px;
     }
 
     .navigation__wrapper {
         flex: 0 1 100%;
         padding-left: 1rem;
+    }
+
+    .navigation-title,
+    .footer-contacts__title {
+        position: relative;
+    }
+
+    .navigation-title::after,
+    .footer-contacts__title::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-image: url('../img/plus.svg');
+        right: 1rem;
+        top: 0;
     }
 
     .navigation__list {
@@ -386,7 +423,7 @@
     }
 
     .footer-copyright::before {
-        top: -29px;
+        top: -31px;
         left: 0;
     }
 

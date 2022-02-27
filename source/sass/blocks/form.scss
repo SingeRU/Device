@@ -50,7 +50,8 @@
 
 .form-form__fields {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    column-gap: 2rem;
     margin-top: 3.2rem;
 }
 
@@ -146,7 +147,7 @@
 
 @media (max-width: $desktop-width) {
     .form {
-        padding-bottom: 6.6rem;
+        padding-bottom: 6.3rem;
     }
 
     .form-form {
@@ -156,10 +157,11 @@
     .form-picture {
         display: none;
     }
+    
 
     .form-form__fieldset {
         flex: 0 1 100%;
-        padding: 0 5.5rem;
+        padding: 0 5.5rem;   
     }
 
     .form-form__title {
@@ -173,9 +175,21 @@
         padding-left: 0.3rem;
     }
 
-    .form-form__fields input {
-        width: 281px;
+    .form-form__fields {
+        justify-content: space-between;
+        column-gap: 2.2rem;
+        margin-top: 3.4rem;
+    
     }
+
+    .form-form__fields label {
+        flex: 0 1 100%;
+    }
+
+    .form-form__fields input {
+        width: 100%;
+    }
+
 
     .form-form__textarea {
         padding-top: 1.1rem;

@@ -25,6 +25,11 @@ html {
   background-color: $dark;
 }
 
+.page-body--fixed {
+
+  overflow: hidden;
+}
+
 .page-body::before {
   content: "";
   position: absolute;
@@ -83,7 +88,7 @@ img {
 
 @media (max-width: $desktop-width) {
   .container {
-    max-width: $tablet-width;
+    max-width: 100%;
   }
 }
 
