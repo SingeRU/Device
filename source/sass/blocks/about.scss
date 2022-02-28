@@ -3,11 +3,20 @@
     grid-template-columns: 17% 1fr;
     margin-top: 6.8rem;
     padding-left: 5.4rem;
+    min-height: 100%;
 }
 
 .about-picture {
     display: flex;
     justify-content: flex-end;
+    position: relative;
+}
+
+.about-picture img {
+    width: 213px;
+    height: 315px;
+    position: absolute;
+    left: 1rem;
 }
 
 .about-message__title {
@@ -16,6 +25,7 @@
     font-size: 36px;
     line-height: 40px;
     margin: 0;
+    margin-top: 0.3rem;
     color: $text-black;
 }
 
@@ -65,13 +75,17 @@
 
     .about-picture {
         padding-top: 2rem;
-        padding-left: 0.9rem
+        padding-left: 0.9rem;
     }
 
     .about-picture img {
         object-fit: contain;
+        position: absolute;
         width: 100%;
         transform: scale(1.2);
+        top: 3.7rem;
+        left: 0.6rem;
+        height: 303px;
     }
 
     .about-message {

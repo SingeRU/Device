@@ -11,8 +11,7 @@
     height: 100%;
     background: url(../img/background.webp) no-repeat;
     top: 0;
-    z-index: -1;
-
+    z-index: 0;
 }
 
 .header-container {
@@ -21,12 +20,26 @@
     padding-top: 33px;
     padding-left: 1.6rem;
     padding-right: 0.8rem;
+    position: relative;
+    z-index: 4;
+}
+
+.header-logo {
+    display: flex;
+    cursor: pointer;
 }
 
 .header__text {
-    margin-left: 16px;
-    padding: 6px 0px 0 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 1rem;
+}
 
+.header__text--subtitle {
+    margin-top: 0.7rem;
 }
 
 .header__title {
